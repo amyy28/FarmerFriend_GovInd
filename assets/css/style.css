@@ -13,6 +13,23 @@ body {
   color: #444444;
 }
 
+
+.mapdiv{
+  margin: auto;
+}
+
+.mapdiv path{
+  fill: black;
+  stroke: #dece0c;
+  stroke-width: 1px;
+  transition: fill 0.3s;
+}
+
+.mapdiv :hover{
+  fill: white;
+}
+
+
 a {
   color: #009cea;
 }
