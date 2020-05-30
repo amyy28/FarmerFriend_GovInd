@@ -1,23 +1,29 @@
 .jumbotron{
-    height: 100px;
+    height: 140px;
     padding-top: 10px;
     background-image: linear-gradient(to bottom right, green , #2b86c5);
 }
 .mainhead{
-    margin-left: 130px;
+    margin-left: 370px;
+    
     font-size: 38px;
 }
 .lead{
-    margin-left: 220px;
-    
+    margin-left: 400px;
+    font-size: 26px;
+}
+.gpms{
+    margin-left: 480px;
+    font-size: 15px;
 }
 .govlogo{
+    margin-top: 15px;
     margin-left: 30px;
     height: 85px;
     width: 90px;
 }
 .pmpic{
-    margin-left: 100px;
+    margin-top: 15px;
     height: 85px;
     width: 90px;
 }
