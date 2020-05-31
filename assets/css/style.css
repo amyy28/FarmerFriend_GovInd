@@ -8,13 +8,12 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
-html, body {
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
   overflow-x: hidden;
 }
-body {
-  position: relative
-}
+
 
 .mapdiv{
   margin: auto;
