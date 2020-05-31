@@ -3,6 +3,12 @@
     padding-top: 10px;
     background-image: linear-gradient(to bottom right, green , #2b86c5);
 }
+marquee{
+
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
 .mainhead{
     margin-left: 370px;
     
