@@ -1,32 +1,37 @@
 .jumbotron{
-    height: 140px;
+    height: 160px;
     padding-top: 10px;
     background-image: linear-gradient(to bottom right, green , #2b86c5);
 }
-@media (max-width: 800px) {
-    .pmpic {
-    display: none;
-    }
-    }
-
 marquee{
 
     padding-left: 30px;
     margin-top: 10px;
 }
 
+#webinar{
+    font-weight: bolder;
+    color: black;
+}
+
 .mainhead{
     margin-left: 370px;
     
-    font-size: 38px;
+    font-size: 50px;
+    color:white;
+    font-weight: bolder;
 }
 .lead{
     margin-left: 400px;
     font-size: 26px;
+    color: whitesmoke;
+    font-weight: bolder;
 }
 .gpms{
     margin-left: 480px;
     font-size: 15px;
+    font-weight: bold;
+    color: white;
 }
 .govlogo{
     margin-top: 15px;
