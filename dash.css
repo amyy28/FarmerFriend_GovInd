@@ -8,6 +8,11 @@ marquee{
     padding-left: 30px;
     margin-top: 10px;
 }
+@media (max-width: 800px) {
+    .pmpic {
+    display: none;
+    }
+}
 
 #webinar{
     font-weight: bolder;
