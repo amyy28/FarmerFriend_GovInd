@@ -1,10 +1,13 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
-  overflow-x: hidden;
+  position: relative;
 }
 
-
+html,body{
+  overflow-x: hidden;
+  
+}
 .mapdiv{
   margin: auto;
 }
