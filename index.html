@@ -7,6 +7,11 @@
         <link rel="stylesheet" type="text/css" href="./dash.css">
         <link href="assets/css/style.css" rel="stylesheet">
         <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 		  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
@@ -340,31 +345,29 @@
     
                     <div class="container">
                       <div class="row">
-                        <div class="col-sm">
-                          
-                          <br>
-                          <button class="btn btn-primary"><a id="iitd" class="institute">IIT Delhi</a></button>
-                          <br>
-                        </div>
-                        
-                        <div class="col-sm">
-                          <br>
-                          <button class="btn btn-primary"><a id="iitb" class="institute">IIT Bombay</a></button>
-                          <br>
-                        </div>
-                        <div class="col-sm">
-                        <br>
-                          
-                                    <button class="btn btn-primary"><a id="iitkgp" class="institute">IIT Kharagpur</a></button>
-                        <br>
-                        </div>
-                        <div class="col-sm">
-                          
-                        <br>
-                          <button class="btn btn-primary"><a id="iitj" class="institute">IIT Jammu</a></button>
+                        <div class="dropdown">
+                          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">IIT's
+                          <span class="caret"></span></button>
+                          <div class="dropdown-menu">
+                           <button class="dropdown-item"><a  id="iitd" class="institute">IIT Delhi</a></button>
+                           <button class="dropdown-item"><a id="iitb" class="institute">IIT Bombay</a></button>
+                            <button class="dropdown-item"><a id="iitkgp" class="institute">IIT Kharagpur</a></button>
+                            <button class="dropdown-item"><a id="iitj" class="institute">IIT Jammu</a></button>
+                          </div>
+                        </div>&nbsp;&nbsp;
+                        <div class="dropdown">
+                          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">IIM's
+                          <span class="caret"></span></button>
+                          <div class="dropdown-menu">
+                           <button class="dropdown-item"><a  id="iimb" class="institute">IIM Bangalore</a></button>
+                           <button class="dropdown-item"><a id="iima" class="institute">IIT Ahmedabad</a></button>
+                            <button class="dropdown-item"><a id="iimc" class="institute">IIM Calcutta</a></button>
+                            <button class="dropdown-item"><a id="iiml" class="institute">IIM Lucknow</a></button>
+                          </div>
                         </div>
                       </div>
                     </div>
+
                                     
                                     
     
@@ -417,6 +420,30 @@
                             <li class="iitj list-group-item"><a href="#">Abc6</a></li> 
                             
                             
+                            <li class="iimb list-group-item"><a href="#">Tech IIM Bangalore 1</a></li> 
+                            <li class="iimb list-group-item"><a href="#">Tech IIM Bangalore 2</a></li> 
+                            <li class="iimb list-group-item"><a href="#">Tech IIM Bangalore 3</a></li> 
+                            <li class="iimb list-group-item"><a href="#">Tech IIM Bangalore 4</a></li> 
+                            <li class="iimb list-group-item"><a href="#">Tech IIM Bangalore 5</a></li> 
+                            <li class="iimb list-group-item"><a href="#">Tech IIM Bangalore 6</a></li> 
+                            
+                            <li class="iima list-group-item"><a href="#">Tech IIM Ahmedabad 1</a></li> 
+                            <li class="iima list-group-item"><a href="#">Tech IIM Ahmedabad 2</a></li> 
+                            <li class="iima list-group-item"><a href="#">Tech IIM Ahmedabad 3</a></li> 
+                            <li class="iima list-group-item"><a href="#">Tech IIM Ahmedabad 4</a></li> 
+                            <li class="iima list-group-item"><a href="#">Tech IIM Ahmedabad 5</a></li> 
+                            <li class="iima list-group-item"><a href="#">Tech IIM Ahmedabad 6</a></li> 
+                            
+                            <li class="iimc list-group-item"><a href="#">Tech IIM Calcutta 1</a></li> 
+                            <li class="iimc list-group-item"><a href="#">Tech IIM Calcutta 2</a></li> 
+                            <li class="iimc list-group-item"><a href="#">Tech IIM Calcutta 3</a></li> 
+                            
+                            <li class="iiml list-group-item"><a href="#">Tech IIM Lucknow 1</a></li> 
+                            <li class="iiml list-group-item"><a href="#">Tech IIM Lucknow 2</a></li> 
+                            <li class="iiml list-group-item"><a href="#">Tech IIM Lucknow 3</a></li> 
+                            <li class="iiml list-group-item"><a href="#">Tech IIM Lucknow 4</a></li> 
+                            
+
                             </ul>
 						
 						    </div>
@@ -874,10 +901,12 @@
             var input, filter, ul, li, a, i, txtValue;
 
             var el = document.getElementsByClassName("institute");
+            console.log(el)
             for (var i =0;i<el.length;i++){
                 el[i].addEventListener("mouseover", function(event){
+                  console.log(event.currentTarget.id);
                     var curr = event.currentTarget.id;
-                    var classes = ["iitkgp","iitb","iitd","iitj"]
+                    var classes = ["iitkgp","iitb","iitd","iitj","iimb","iimc","iima","iiml"]
                     for(var j=0;j<classes.length;j++){
                         if(classes[j] != curr){
                             var divsToHide = document.getElementsByClassName(classes[j]); //divsToHide is an array
@@ -888,7 +917,7 @@
                     } 
                 });
                 el[i].addEventListener("mouseout",function(event){
-                    var classes = ["iitkgp","iitb","iitd","iitj"]
+                    var classes = ["iitkgp","iitb","iitd","iitj","iimb","iimc","iima","iiml"]
                     for(var j=0;j<classes.length;j++){
                         var divsToShow = document.getElementsByClassName(classes[j]); //divsToHide is an array
                             for(var k = 0; k < divsToShow.length; k++){
