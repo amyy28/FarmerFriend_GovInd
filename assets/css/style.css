@@ -1238,7 +1238,7 @@ section {
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out; */
 }
 
 .contact .info h4 {
@@ -1271,7 +1271,7 @@ section {
   text-align: center;
   width: 36px;
   height: 36px;
-  transition: 0.3s;
+  /* transition: 0.3s; */
   margin-right: 10px;
 }
 
@@ -1339,8 +1339,8 @@ section {
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
   border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
+  /* -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite; */
 }
 
 .contact .php-email-form input, .contact .php-email-form textarea {
@@ -1362,7 +1362,7 @@ section {
   border: 0;
   padding: 10px 24px;
   color: #fff;
-  transition: 0.4s;
+  /* transition: 0.4s; */
   border-radius: 4px;
 }
 
@@ -1379,14 +1379,14 @@ section {
   }
 }
 
-@keyframes animate-loading {
+/* @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Breadcrumbs
